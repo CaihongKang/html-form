@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Learning the Forms</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Hello, Forms!</h1>
+        <FORM action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add user</legend>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select name="status-options" id="status">
+                        <option value="student">Student</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose your favorite programming language:</p>
+
+                </div>
+
+                <div><input type="radio" name="html" id="html">
+                     <label for="html">HTML</label>
+                </div>
+
+                <div><input type="radio" name="css" id="css">
+                     <label for="css">CSS</label>
+                </div>
+
+                <div><input type="radio" name="javaScript" id="javaScript">
+                     <label for="javaScript">JavaScript</label>
+                </div>
+
+               <div><input type="radio" name="html" id="html">
+                <label for="html">Html</label>
+               </div>
+
+
+                <div>
+                    <label for="expiration">Expiration</label>
+                    <input type="date" id="expiration" name="expiration">
+                </div>
+
+                <div>
+                    <label for="bio">Bio</label>
+                    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Add this person</button>
+                </div>
+
+            </fieldset>
+
+        </FORM>
+    </body>
+
+</html>
