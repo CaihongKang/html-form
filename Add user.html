@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Learning the Forms</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Hello, user!</h1>
+        <FORM action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add user</legend>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select name="status-options" id="status">
+                        <option value="student">Student</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose your favorite programming language:</p>
+
+                </div>
+
+                <!-- Simply give them the same name,so check raido only one value -->
+                <div>
+                    <input type="radio" name="favoriteLanguage"  id="html" checked>
+                    <label for="html">HTML</label>
+                    <input type="radio" name="favoriteLanguage" id="css" >
+                    <label for="css">CSS</label>
+                    <input type="radio" name="favoriteLanguage" id="javaScript" >
+                    <label for="javaScript">JavaScript</label>
+
+                </div>
+
+
+
+               <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+               </div>
+
+                <div>
+                    <label for="currentDate">Date</label>
+                    <input type="date" id="currentDate" name="curent_date">
+                </div>
+
+                <div>
+                    <label for="signUp">Sign up for newsletter</label>
+                    <input type="checkbox"  id="signUp" name="signUp" >
+                </div>
+
+                <div>
+                    <label for="agreeTerms">Agree to terms and conditions</label>
+                    <input type="checkbox"  id="agreeTerms" name="agreeTerms" >
+                </div>
+
+
+
+                <div>
+                    <button type="submit">Add this person</button>
+                </div>
+
+            </fieldset>
+
+        </FORM>
+    </body>
+
+</html>
